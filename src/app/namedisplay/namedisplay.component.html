@@ -1,0 +1,5 @@
+<p>namedisplay works!</p>
+<label for="nam">Name</label>
+<input type="text" name="nam" [(ngModel)]="cust_name" />
+<input type="button" value="Show message" (click)= showMsg()>
+<h4 *ngIf='view'>Welcome {{cust_name}}</h4>
